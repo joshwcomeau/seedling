@@ -4,7 +4,6 @@ import Home                   from '../components/Home';
 import * as Actions           from '../actions';
 
 function mapStateToProps(state) {
-  console.log(state, {state})
   return {state};
 }
 
