@@ -33,9 +33,12 @@ module.exports = {
       // JAVASCRIPT
       {
         test:     /\.jsx?$/,
-        loader:   'react-hot!babel',
+        loader:   'babel',
         exclude:  /node_modules/,
-        include:  /(client|common)/
+        include:  /client/,
+        query: {
+          presets: ['react-hmre'],
+        }
       },
       // SASS
       {
